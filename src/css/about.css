@@ -1,0 +1,29 @@
+h2 {
+  font-size: 23px;
+  font-weight: 300;
+  color:#757170;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.aboutContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.aboutContainer p {
+  max-width: 60vw;
+}
+
+.headshotContainer  {
+  display: flex;
+  justify-content: center;
+  height: 4000px;
+  max-height: 60vh;
+  background-image: url('../assets/donnaHeadshot.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

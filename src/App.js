@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Header from './components/header.js'
 import About from './components/about.js'
@@ -25,17 +25,35 @@ class App extends Component {
 
   render() {
     return (
-      // <Router >
-        <div className="mainContainer">
+      <Router >
+        <div>
           <header className="header">
             {/* <h1 className="App-title">Lark Studios: Wool Works</h1> */}
             <Header />
           </header>
-          {/* <Route path='/about'
-            component={ About }
-          /> */}
-        </div>
-    // </Router>
+          <div className="mainContainer">
+
+            <Route path='/about'
+              component={ About }
+            />
+            <Route path='/gallery'
+              component={ Gallery }
+            />
+            <Route path='/events'
+              component={ Events }
+            />
+            <Route path='/workshop'
+              component={ Workshop }
+            />
+            <Route path='/contact'
+              component={ Contact }
+            />
+            <Route exact path='/'
+              component={ Home }
+            />
+          </div>
+      </div>
+      </Router>
     );
   }
 }

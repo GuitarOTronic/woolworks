@@ -1,0 +1,10 @@
+.picContainer{
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.picContainer img {
+
+  max-height: 400px
+}

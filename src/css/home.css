@@ -1,0 +1,29 @@
+p {
+  padding: 1.5rem;
+}
+
+.homeContainer hr {
+  width: 95vw;
+  margin: 1rem;
+  align-self: center;
+  margin-top: 1.5rem;
+
+}
+
+
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+
+  /* padding: 0 15rem; */
+  max-width: 980px;
+}
+
+
+h2 {
+  font-size: 23px;
+  font-weight: 300;
+  color:#757170;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
