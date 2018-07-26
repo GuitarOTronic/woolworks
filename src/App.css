@@ -1,5 +1,6 @@
 body{
   padding: 0;
+  color:gray;
 }
 
 h1, h2, h3, h4, h5, h6, p, div, a {
@@ -7,18 +8,33 @@ h1, h2, h3, h4, h5, h6, p, div, a {
   margin: 0;
 }
 
-.flex{
-  /* display: flex; */
+.brand {
+  color:grey;
+  padding-left:2rem;
+  align-self: center
 }
+
+.contactContainer p{
+  padding:1rem;
+}
+
+.contactContainer h3 {
+  padding:3rem 1rem;
+}
+
+
 .headerOuterContainer{
   text-align: right;
   padding-right: 1rem;
+  width:100vw;
+  display:flex;
+  justify-content: space-between;
 }
 .mainContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding: 2rem;
 }
 
 .headerOuterContainer li{
@@ -28,7 +44,7 @@ h1, h2, h3, h4, h5, h6, p, div, a {
 
 .headerOuterContainer a{
   text-decoration: none;
-  color:black,
+  color:gray,
 }
 
 .headerOuterContainer a:hover{
@@ -49,22 +65,25 @@ h1, h2, h3, h4, h5, h6, p, div, a {
 }
 .hamburgerUl{
   position:absolute;
-  top:24px;
+  top:50px;
   right: 0;
-
-
+  text-align: center;
+  z-index: 2000;
+  
 }
 .hamburgerUl a{
-  color:black;
+  font-size:16px;
+  color:gray;
+  z-index: 2000;
 }
 .hamburgerUl li{
-  width:100px;
+  width:20rem;
   background: #f2f2f2;
-  margin:0;
+  padding:  1rem 0;
 }
 .navLinks li {
   padding: 0 .5rem;
-  color:black;
+  color:gray;
 }
 
 .navLinks li:hover {
@@ -72,8 +91,15 @@ h1, h2, h3, h4, h5, h6, p, div, a {
   color: #a8a8a8;
 }
 
+.hamburgerUl a:active{
+  text-decoration: none !important;
+  color:black;
+}
+
 .navLinks a{
   text-decoration: none;
+  font-size:16px;
+  align-self: center;
 }
 
 .App {
@@ -88,15 +114,17 @@ h1, h2, h3, h4, h5, h6, p, div, a {
 
 .linksContainer{
   display: flex;
+  align-self: center;
+  /* align-self: flex-start; */
   flex-direction: row;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
 .header {
   display: flex;
   background-color: #f2f2f2;
-  height: 40px;
-  width:100vw;
+  height: 50px;
+  /* width:100vw; */
 }
 
 
@@ -109,6 +137,9 @@ h1, h2, h3, h4, h5, h6, p, div, a {
   }
   .hamburger{
     display: flex;
+  }
+  .hamburgerUl{
+    /* display:flex; */
   }
  }
 
@@ -125,6 +156,9 @@ h1, h2, h3, h4, h5, h6, p, div, a {
 
    }
    .hamburger{
+     display: none;
+   }
+   .hamburgerUl{
      display: none;
    }
    .navLinks{

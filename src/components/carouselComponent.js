@@ -13,7 +13,7 @@ class CarouselComponent extends Component {
     return (
       <div className='picContainer'>
         {/* <img src={hat} alt='hat'/> */}
-        <Carousel className={'CarouselContainer'} indicators={false} style={{width:'60vw', margin:'0 auto'}}>
+        <Carousel className={'CarouselContainer'} indicators={false} style={{width:'60vw', backgroundColor:'black', margin:'0 auto'}}>
           {/* <Carousel.Item>
             <img  alt="hat" src={hat} style={{margin:'0 auto'}}/>
             <h3>First slide label</h3>
