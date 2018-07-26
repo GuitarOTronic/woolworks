@@ -28,7 +28,6 @@ class App extends Component {
       <Router >
         <div>
           <header className="header">
-            {/* <h1 className="App-title">Lark Studios: Wool Works</h1> */}
             <Header />
           </header>
           <div className="mainContainer">

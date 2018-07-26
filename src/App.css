@@ -1,50 +1,139 @@
 body{
   padding: 0;
 }
-/* h1{
-  margin: 0;
-} */
 
 h1, h2, h3, h4, h5, h6, p, div, a {
   padding: 0;
   margin: 0;
 }
 
+.flex{
+  /* display: flex; */
+}
+.headerOuterContainer{
+  text-align: right;
+  padding-right: 1rem;
+}
 .mainContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
+
+.headerOuterContainer li{
+  list-style: none;
+
+}
+
+.headerOuterContainer a{
+  text-decoration: none;
+  color:black,
+}
+
+.headerOuterContainer a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #a8a8a8;
+}
+
 .navLinks{
   display: flex;
+  justify-content: flex-end;
   list-style: none;
   align-items: center;
   margin: 0;
 }
+.hamburger{
+  align-self: flex-end;
+}
+.hamburgerUl{
+  position:absolute;
+  top:24px;
+  right: 0;
 
+
+}
+.hamburgerUl a{
+  color:black;
+}
+.hamburgerUl li{
+  width:100px;
+  background: #f2f2f2;
+  margin:0;
+}
 .navLinks li {
   padding: 0 .5rem;
+  color:black;
+}
+
+.navLinks li:hover {
+  text-decoration: underline;
+  color: #a8a8a8;
 }
 
 .navLinks a{
   text-decoration: none;
 }
+
 .App {
   text-align: center;
 }
 
 .headerContainer{
+  /* width:100vw; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.linksContainer{
   display: flex;
   flex-direction: row;
+  padding-right: 1rem;
 }
 
 .header {
+  display: flex;
   background-color: #f2f2f2;
   height: 40px;
-  /* padding: 25px; */
+  width:100vw;
+}
+
+
+@media (min-width: 320px) {
+  body{
+
+  }
+  .navLinks{
+      display: none;
+  }
+  .hamburger{
+    display: flex;
+  }
+ }
+
+@media (min-width: 480px){
+  body{
+
+  }
 
 }
-.header h1 {
-    color: purple;
+
+
+ @media  (min-width:768px) {
+   body{
+
+   }
+   .hamburger{
+     display: none;
+   }
+   .navLinks{
+     display: flex;
+   }
+ }
+
+@media  (min-width:1200px) {
+  body{
+
+  }
 }

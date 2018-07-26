@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
-import Carousel from './carousel.js'
+import CarouselComponent from './carouselComponent.js'
 import '../css/home.css'
 class Home extends Component {
 
   render() {
     return (
       <div className='homeContainer'>
-        <h2>WOOL WORKS BY DONNA</h2>
-        <Carousel />
-        <hr></hr>
-        <p>I love the light, reflections and colors that accompany the change of the seasons. My love of the outdoors led me to pursue degrees in Environmental Education (BS) and Landscape Architecture (MLA) from the University of Michigan. For several generations my family have been garment makers. Fiber art allows me to combine my tailoring heritage with my environmental career pursuits. I create whimsical pieces inspired by the natural world that I am so attracted to on a daily basis. In creating my pieces, I use a similar skill set that  I do in designing a garden. There is a flow of color and form within my fiber creations that is not unlike the movement in a garden.
-        </p>
-        <p>
-        The felting process allows for the formation of paper-thin material which is then sculpted from within while the material is wet. “Fulling,” is accomplished through vigorous agitation --rubbing with a variety of ridgid tools, slapping and throwing the wet object against washboards The resulting  shrinkage ‘tightens’ the wool into a refined shape. As in my scarf-making the nuno felting technique allows me to “paint” the surface with colorful wool fibers while maintaining the light  and airy dynamic of fine silk.
-      </p>
-      <p>
-        I am represented this year at Chihuly Garden and Glass Bookstore (Seattle, WA), Jardin du Soleil, (Sequim, WA), Angelwood Gallery, (Grand Rapids, OH), Hudson Gallery, (Sylvania, OH),  Red Door Gallery (Ludington, MI),  and Synchronicity Gallery (Glen Arbor, MI).
-      </p>
+        {/* <h2>ABOUT: </h2> */}
+
+
+        <div style={{paddingTop:'3rem'}}>
+          <p>I’m intrigued by the alchemy of felt making.</p>
+          <p>
+            For the PT Wearable Art show (Port Townsend), I used the extremes of wool’s capability. I’ve tried my hand with the delicate application of nuno felting to create a wedding dress. The Animals in the Landscape Coat was inspired by a Franz Marc painting. My ‘painting’ wrapped around the long coat and it’s circular draped tail added drama to its movement. The Horned Mask is a densely felted sculpture.  The possibilities to create with wool are endless.
+          </p>
+        </div>
+        <CarouselComponent />
+        {/* <hr></hr> */}
+        <p>Nuno Felting is achieved through the stacking & layering of merino wool fibers onto hand dyed silk, carefully varying their lengths & alignments in a fashion that allows for controlled shrinkage. The resulting felt maintains just the right amount of movement & drape for its function as good design & clothing. </p>
       </div>
     );
   }
