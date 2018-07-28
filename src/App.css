@@ -8,12 +8,25 @@ h1, h2, h3, h4, h5, h6, p, div, a {
   margin: 0;
 }
 
+h1 {
+  font-family: 'Arapey', serif;
+}
+
 .brand {
   color:grey;
   padding-left:2rem;
-  align-self: center
-}
+  align-self: center;
 
+}
+.eventLink{
+  padding-top:1rem;
+  padding-left:0;
+}
+.eventLink li{
+  padding-top:1rem;
+  list-style: none;
+
+}
 .contactContainer p{
   padding:1rem;
 }
@@ -141,20 +154,23 @@ h1, h2, h3, h4, h5, h6, p, div, a {
   .hamburgerUl{
     /* display:flex; */
   }
+  .brand h1{
+    font-size:3rem;
+  }
  }
 
 @media (min-width: 480px){
-  body{
-
+  .brand h1{
+    font-size:4rem;
   }
 
 }
 
 
  @media  (min-width:768px) {
-   body{
-
-   }
+  .brand h1{
+    font-size:5rem;
+  }
    .hamburger{
      display: none;
    }
