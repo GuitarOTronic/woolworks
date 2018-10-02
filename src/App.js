@@ -32,8 +32,8 @@ class App extends Component {
       <Router >
         <div >
           <div className="header">
-            <Header 
-              handleExtendHamburger={this.handleExtendHamburger}
+            <Header   
+                 handleExtendHamburger={this.handleExtendHamburger}
               extendHamburger={this.state.extendHamburger}
 
             />

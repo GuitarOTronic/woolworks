@@ -48,7 +48,35 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  /* opacity: 0.2; */
+ 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color:'red'; 
+  min-height:94vh;
+
+  -webkit-animation-name: mainContainerBackgroundImg;  
+  /* -webkit-animation-duration: 1s;   */
+  animation-iteration-count: infinite;
+  animation-name: mainContainerBackgroundImg;
+  /* animation-duration: 1s; */
+  animation-fill-mode:forwards;
+  animation: mainContainerBackgroundImg 2s linear infinite 2s; 
+  animation-delay: 4s;
 }
+
+
+/* @-webkit-keyframes mainContainerBackgroundImg{
+  from{background-image: url('./assets/homePhotos/coat1.jpg')}
+  to{ background-image: url('./assets/BeardedTeapot.jpg');}
+} */
+
+/* @keyframes mainContainerBackgroundImg {
+  from{background-image: url('./assets/homePhotos/coat1.jpg')}
+  to{ background-image: url('./assets/BeardedTeapot.jpg');}
+} */
+
 
 .headerOuterContainer li{
   list-style: none;
