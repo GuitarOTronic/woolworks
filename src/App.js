@@ -12,54 +12,62 @@ import Workshop from './components/workshop.js'
 
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
-    this.state={
-      extendHamburger:false,
+    this.state = {
+      extendHamburger: false,
     }
   }
 
 
-  handleExtendHamburger=()=>{
+  handleExtendHamburger = () => {
     this.setState({
-      extendHamburger:!this.state.extendHamburger
+      extendHamburger: !this.state.extendHamburger
     })
   }
 
 
   render() {
+    const pix = [1, 2, 3]
+
     return (
       <Router >
         <div >
           <div className="header">
-            <Header 
+            <Header
               handleExtendHamburger={this.handleExtendHamburger}
               extendHamburger={this.state.extendHamburger}
 
             />
           </div>
-          <div onClick={()=> this.setState({extendHamburger:false})} className="mainContainer">
+
+          {pix.map(pic => {
+            let source = `http://d1bxajre3cde6h.cloudfront.net/${pic}_image.jpg`
+            return <img key={`${pic}-pic-id`} style={{ width: "3rem" }} src={source} alt='testImage' />
+          })
+          }
+          <div onClick={() => this.setState({ extendHamburger: false })} className="mainContainer">
 
             <Route path='/about'
-              component={ About }
+              component={About}
             />
             <Route path='/gallery'
-              component={ Gallery }
+              component={Gallery}
             />
             <Route path='/events'
-              component={ Events }
+              component={Events}
             />
             <Route path='/workshop'
-              component={ Workshop }
+              component={Workshop}
             />
             <Route path='/contact'
-              component={ Contact }
+              component={Contact}
             />
             <Route exact path='/'
-              component={ Home }
+              component={Home}
             />
           </div>
-      </div>
+        </div>
       </Router>
     );
   }
