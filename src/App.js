@@ -7,7 +7,7 @@ import About from './components/about.js'
 import Contact from './components/contact.js'
 import Events from './components/events.js'
 import Gallery from './components/gallery.js'
-import Home from './components/home.js'
+import Home from './components/home.jsx'
 import Workshop from './components/workshop.js'
 
 

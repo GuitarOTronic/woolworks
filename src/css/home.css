@@ -11,6 +11,8 @@
 
 .homeContainer p {
   padding: .6rem 2rem;
+  justify-content: center;
+  height: 90vh;
 }
 h2 {
   font-size: 23px;
@@ -21,4 +23,78 @@ h2 {
 .homeCopy {
   padding-top: 4rem;
   max-width: 900px;
+}
+
+
+.bg-slide-1{
+  background-image: url('../assets/homePhotos/01_background.jpg');
+    animation-name: bg1;
+    animation-duration: 2s;
+    animation-delay: 7s;
+}
+@keyframes bg1{
+  from{background-image: url('../assets/homePhotos/01_background.jpg');}
+  to {background-image: url('../assets/homePhotos/02_background.jpg');}
+}
+
+.bg-slide-2{
+  background-image: url('../assets/homePhotos/02_background.jpg');
+  animation-name: bg2;
+  animation-duration: 2s;
+  animation-delay: 7s;
+}
+
+@keyframes bg2{
+  from{background-image: url('../assets/homePhotos/02_background.jpg');}
+  to {background-image: url('../assets/homePhotos/03_background.jpg');}
+}
+.bg-slide-3{
+  background-image: url('../assets/homePhotos/03_background.jpg');
+  animation-name: bg3;
+  animation-duration: 2s;
+  animation-delay: 7s;
+
+}
+
+@keyframes bg3{
+  from{background-image: url('../assets/homePhotos/03_background.jpg');}
+  to {background-image: url('../assets/homePhotos/04_background.jpg');}
+}
+.bg-slide-4{
+  background-image: url('../assets/homePhotos/04_background.jpg');
+  animation-name: bg4;
+  animation-duration: 2s;
+  animation-delay: 7s;
+} 
+@keyframes bg4{
+  from{background-image: url('../assets/homePhotos/04_background.jpg');}
+  to {background-image: url('../assets/homePhotos/05_background.jpg');}
+}
+.bg-slide-5{
+  background-image: url('../assets/homePhotos/05_background.jpg');
+  animation-name: bg5;
+  animation-duration: 2s;
+  animation-delay: 7s;
+} 
+@keyframes bg5{
+  from{background-image: url('../assets/homePhotos/05_background.jpg');}
+  to {background-image: url('../assets/homePhotos/06_background.jpg');}
+}
+
+.bg-slide-6{
+  background-image: url('../assets/homePhotos/06_background.jpg');
+  animation-name: bg6;
+  animation-duration: 2s;
+  animation-delay: 7s;
+}
+@keyframes bg6{
+  from{background-image: url('../assets/homePhotos/06_background.jpg');}
+  to {background-image: url('../assets/homePhotos/01_background.jpg');}
+} 
+
+.bg {
+  background-size: contain;
+  background-repeat: no-repeat; 
+  width: 100vw;
+  /* height:100; */
 }
